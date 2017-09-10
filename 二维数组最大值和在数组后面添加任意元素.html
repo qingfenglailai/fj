@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 二维最大值
+     var a=[[74,2,3,4],[5,6,7,9]]
+     Ar(a);
+     function Ar(arrs){
+           
+     var max=arrs[0][0];
+     for(var i=0;i<arrs.length;i++){
+     	for(var j=0;j<arrs[i].length;j++){
+     		if(max < arrs[i][j]){     			 
+     			max = arrs[i][j];
+     		}
+     	}
+     }
+      console.log(max);
+    }
+
+
+    /*在数组后面添加任意元素*/
+      var arr=[4,5,6,7];
+      add(arr,4,5,6);
+      function add(arr){      
+        for(var i=1;i<=arguments.length;i++){
+        arr[arr.length]=arguments[i];
+        
+        }
+        console.log(arr);
+     }
+	</script>
+</body>
+</html>
