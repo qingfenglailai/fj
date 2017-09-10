@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*表格*/
+    xx(5,8);
+	 function xx(star,star1){ 
+	 	for(var j=1;j<= star ;j++){
+	 	for(var i=1;i<= star1 ;i++){
+	 		document.write('*');
+	 	}
+	 	    document.write('<br/>');
+	 }
+    }
+	/*乘法表格*/
+	 document.write('<table border=1 cellspacing=0>');
+	    for(var j=1;j<=9;j++){
+	    	document.write('<tr>')
+	      for(var i=1;i<=j;i++){
+	      	document.write('<td>'+i+'*'+j+'</td>')
+	      }
+	       
+	 }
+	     document.write('</tr>')
+	 document.write('</table>');	
+	/*行变色*/
+	 document.write('<table border=1 cellspacing=0>');
+	    for(var j=1;j<=9;j++){
+	   	  if(j%2==0){
+	    	  	document.write('<tr style="background:red">')
+	    	  }else{
+	    	  	document.write('<tr style="background:pink">')
+	    	  }
+	      for(var i=1;i<=j;i++){
+	      	document.write('<td>'+i+'*'+j+'</td>')
+	   
+	    }    
+	 }   
+	     document.write('</tr>')
+	 document.write('</table>');	
+	/*列变色*/
+	document.write('<table border=1 cellspacing=0>');
+	   for(var j=1;j<=9;j++){	    	 
+    	  	document.write('<tr>')
+          for(var i=1;i<=j;i++){
+    	   if(i%2==0){
+    	 	document.write('<td style="background:green">'+i+'*'+j+'</td>')
+    	    }else{
+    	 	document.write('<td style="background:yellow">'+i+'*'+j+'</td>')
+    	     }
+	      		   
+	    }    
+	 }   
+	     document.write('</tr>')
+	 document.write('</table>');
+         /**/
+	 var table='<table>';
+	 for(var i=1;i<11;i++){
+	 	table= table +'<tr>'
+	 	 for(var j=1;j<11;j++){
+	 	 	table= table +'<td>'+i+'-'+j+'</td>';
+	 	 }
+	 }
+	 table=table+'</tr>';
+	 
+	 document.write(table);	
+	</script>
+</body>
+</html>
