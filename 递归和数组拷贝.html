@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*递归函数*/
+  /*fn(0);
+ function fn(num){
+ 	if(num<5){
+ 		fn(++num);
+ 	}
+ 	alert(num);
+ }*/
+
+
+ /*数组的拷贝*/
+  var arr=[1,2,3,4,['x','y','z']];
+     // var cope1=cope(arr);
+   console.log(copy(arr))
+
+ function copy(arr){
+ 	var newarr=[];
+ 	for(var i=0;i<arr.length;i++){
+ 		if(typeof arr[i]== 'object'){
+ 			newarr[i] =copy (arr[i]);
+ 		}
+ 		else{
+ 			newarr[i]=arr[i];
+ 		}
+ 	}
+ 	return newarr;
+ }
+	</script>
+</body>
+</html>
