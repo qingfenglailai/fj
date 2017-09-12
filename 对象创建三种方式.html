@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		 /*对象的创建*/
+    /* function Student(name,age,sex){
+     	this.name = name;
+     	this.age = age;
+     	this.sex = sex;
+     	this.say=function (){
+     		alert(1);
+     	}
+     }
+      let zhangsan= new Student('wangwu',22,'boy');
+
+      console.log(zhangsan)*/
+
+      // function phone(name,color,size,money,cpu){
+      // 	this.name=name;
+      // 	this.color=color;
+      // 	this.size=size;
+      // 	this.money=money;
+      // 	this.cpu = cpu;
+      // 	this.say=function (){
+      //      alert('简约时尚')
+      // 	}
+      // 	this.music=function (){
+      //      alert('听音乐')
+      // 	}
+      // 	this.call=function (){
+      //      alert('打电话')
+      // 	}
+      // }
+      // let iphone=new phone('iphone8','black',5.5,'$1200','高通晓龙MTC640');
+      // console.log(iphone);
+      // alert(iphone.music());
+      
+      /*for in 遍历对象*/
+       // for (let i in iphone){
+       // 	console.log(`${i}----${iphone[i]}`);
+       // }
+       
+
+       // constructor  返回对象属性
+       // let zhangsan={}
+       // zhangsan.name='zhangsan';
+
+	/* json创建   ""可加可不加 切记值写完用','隔开  不是分号*/
+     /*  let techer={      
+       	"name" : 'lixing',    
+       	 "age"  : 30,
+       	 "sex"  : 'boy',
+
+       	say :function (){
+       		alert('很可爱');
+       	}
+       }
+       console.log(techer);
+      techer.say();*/
+
+
+/*类 创建*/
+      class Student{
+      /*方法*/constructor (){
+      		this.name = 'wangwu';
+
+      		this.say=function (){
+      			alert(1);
+      		}
+      	}
+      	study(){
+      		alert('xuexi');
+      	}
+      }
+      let wangwu= new Student();
+      console.log(wangwu);
+      wangwu.say();
+      wangwu.study();
+
+
+/*构造函数传参、给方法传参【参数直接写在方法后面】 、方法调用自己的属性*/
+
+	</script>
+</body>
+</html>
