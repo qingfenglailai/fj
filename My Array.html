@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的数组</title>
+</head>
+<body>
+	<script>
+		let arr=new myArray('a','b','c','d',1);
+          console.log(arr.length);
+
+          arr.push('x','y');
+          console.log(arr);
+
+          let w=arr.indexof(1);
+          console.log(w);
+
+           let z=arr.indexof(1);
+          console.log(z);
+     
+
+      let y= arr.some(function(value){
+         	return value>0;
+         });
+         console.log(y);
+
+      let n= arr.every(function(value){
+         	return value>0;
+             });
+           console.log(n);
+
+     console.log(arr.reversal(arr));
+
+      let x=arr.join('+');
+         console.log(x);
+
+   let arr1=new myArray(1,2,3,4);
+       let q=arr1.map(function(value){
+       	  return value*2
+       })
+      console.log(q);
+
+
+     let t=arr1.filter(function(value){
+      	if(value%2==1){
+           return value;
+         }
+          })
+        console.log(t);
+
+     console.log(arr.includes(1) );
+
+		function myArray(){
+           for(let i=0;i<arguments.length;i++){
+              this[i]=arguments[i];
+           }
+           this.length=arguments.length;
+    /*添加*/
+           this.push = function(){
+           	for(let i=0;i<arguments.length;i++){
+           		this[this.length]=arguments[i];
+           		this.length++;
+           	}
+           }
+    /*indexof   lastindexof  includes[如果包含返回true] reverse join【数组里面元素拼接】 sort[连接]
+       some every  map filter*/
+
+           this.indexof= function(value){
+           	for(let i=0;i<this.length;i++){
+           		if(this[i]==value){
+           			return i;
+           		}
+           	}
+           	return undefinde;
+           }
+           
+           this.lastindex=function(value){
+               for(let i=this.length-1;i>=0;i++){
+               	  if(this[i]==value){
+           			return i;
+           		}
+               }
+           }
+
+  /*some*/
+           this.some = function(fn){
+           	for(let i=0;i<this.length;i++){
+           		if(fn(this[i])){
+           			return true;
+           		}
+           	}
+           	    return false;
+           }
+  /*every*/
+          this.every=function(fn){
+          	for(let i=0;i<this.length;i++){
+           		if( !fn(this[i])){
+           			return false;
+           		}
+           	}
+           	    return true;
+           }
+
+
+      /*reversal*/
+            this.reversal=function(){
+            	let newarr=[];
+             for(let i=this.length-1;i>=0;i--){
+         		newarr[newarr.length]=this[i];
+         	}
+         	  return newarr;
+            }
+     /*join*/
+           this.join=function (str){
+           	let result='';
+           	for(let i=0;i<this.length;i++){
+      	    if(i<this.length-1){
+             result += this[i]+ str;
+           }else{
+    	    result += this[i];
+            }
+          }
+      return result;
+           }
+      
+   /*map*/
+       this.map=function(fn){
+          let newarr1=[];         
+          for(let i=0;i<this.length;i++){
+         newarr1[newarr1.length]=fn(this[i]);
+       }
+       return newarr1;
+       }
+     /*map第二种*/
+       this.map=function(fn){
+       	let newarr1=new myArray();
+       	for(let i=0;i<this.length;i++){
+       		newarr1.push(fn(this[i],i,this))
+       	}
+       	return newarr1;
+       }  
+
+  /*filter*/
+      this.filter=function(fn){
+      	let newarr2=[];
+      	for(let i=0;i<this.length;i++){
+       		if(fn(this[i])){
+       		newarr2[newarr2.length]=this[i];
+       		}
+        	   
+         	}
+         	return newarr2;
+      }
+    /*includes*/
+         this.includes=function(value){
+         	for(let i=0;i<this.length;i++){
+         		if(value == this[i]){
+                        return true;
+         		}
+         	}
+         	return false;
+         }
+ /*去空*/
+      this.delnall= function(){
+      	let newarr3=new myArray();
+      	for(let i=0;i<this.length;i++){
+      		if(this[i] != undefinde){
+               newarr3.push(this[i]);
+      		}
+      	}
+      	   return newarr3;
+      }
+
+
+
+		}
+
+		
+	</script>
+</body>
+</html>
