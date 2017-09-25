@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.box{
+		width: 500px;
+		height: 200px;
+		background: gray;
+		margin-left: 426px;
+
+	}
+	textarea {
+
+width: 500px;
+height: 200px;
+margin-left: 426px;
+}
+input {
+display: block;
+width: 20%;
+margin: 15px auto;
+}
+#span{
+	color: #000000;
+}
+</style>
+<body>	
+	<textarea autofocus id="area" onkeydown="sy()" maxlength="10" placeholder="只能输入10个字"></textarea>
+	<span id="span">你还可以输10个字</span>
+	<input type="button" value="发表">
+	<div class="box"><ul id="list"></ul></div>
+	
+</body>
+<script>
+/*文本部分*/
+	function sy() {
+       let num=document.getElementById("area").value.length;
+       //console.log(num);
+       let sheng=10-num;
+       if(sheng==0){
+         //变颜色为红色
+         console.log(sheng);
+         document.getElementById("span").style.color="#ff0000";
+       }else{
+         //变颜色为黑色
+         document.getElementById("span").style.color="#000000";
+       }
+       document.getElementById("span").innerHTML=sheng;
+     }
+     /*按钮部分*/
+     let btn = document.querySelector('input');
+    let text = document.querySelector('textarea');
+    let list = document.querySelector('#list');
+    let nub=0;
+    btn.onclick=function(){
+    	if(text.value.trim() == ""){
+     alert("求求你打点字吧");
+      return false;
+}
+    let li =document.createElement('li');
+    li.innerHTML = text.value;
+    list.insertBefore(li,list.children[0]);
+       text.value = "";
+      
+      nub++;
+    }
+</script>
+</html>
