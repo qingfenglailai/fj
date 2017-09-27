@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*表格*/
+    /*xx(5,8);
+	 function xx(star,star1){ 
+	 	for(var j=1;j<= star ;j++){
+	 	for(var i=1;i<= star1 ;i++){
+	 		document.write('*');
+	 	}
+	 	    document.write('<br/>');
+	 }
+    }*/
+	/*乘法表格*/
+	 /*document.write('<table border=1 cellspacing=0>');
+	    for(var j=1;j<=9;j++){
+	    	document.write('<tr>')
+	      for(var i=1;i<=j;i++){
+	      	document.write('<td>'+i+'*'+j+'</td>')
+	      }
+	       
+	 }
+	     document.write('</tr>')
+	 document.write('</table>');*/	
+	/*行变*/
+	 /*document.write('<table border=1 cellspacing=0>');
+	    for(var j=1;j<=9;j++){
+	   	  if(j%2==0){
+	    	  	document.write('<tr style="background:red">')
+	    	  }else{
+	    	  	document.write('<tr style="background:pink">')
+	    	  }
+	      for(var i=1;i<=j;i++){
+	      	document.write('<td>'+i+'*'+j+'</td>')
+	   
+	    }    
+	 }   
+	     document.write('</tr>')
+	 document.write('</table>');*/	
+	/*列变*/
+	/*document.write('<table border=1 cellspacing=0>');
+	   for(var j=1;j<=9;j++){	    	 
+    	  	document.write('<tr>')
+          for(var i=1;i<=j;i++){
+    	   if(i%2==0){
+    	 	document.write('<td style="background:green">'+i+'*'+j+'</td>')
+    	    }else{
+    	 	document.write('<td style="background:yellow">'+i+'*'+j+'</td>')
+    	     }
+	      		   
+	    }    
+	 }   
+	     document.write('</tr>')
+	 document.write('</table>');*/
+
+	 /*var table='<table>';
+	 for(var i=1;i<11;i++){
+	 	table= table +'<tr>'
+	 	 for(var j=1;j<11;j++){
+	 	 	table= table +'<td>'+i+'-'+j+'</td>';
+	 	 }
+	 }
+	 table=table+'</tr>';
+	 
+	 document.write(table);	*/	
+
+    /* 打出金字塔状的 * 号*/ 
+   /*var row=5;
+   for(var i=1;i<=row;i++){
+   	  for(var j=1;j<=row-i;j++){
+   	  	document.write('-');
+   	  }
+   	   
+   	   for(var z=1;z<=i*2-1;z++){
+   	   	document.write('*');
+   	   }
+   	   document.write('<br/>');
+	} */
+
+	/*var i=1,j=1;
+	for(var k=0;k<=100;){
+		k=i+j
+		document.write(k+'&nbsp;');
+		i=j;
+		j=k;
+	}*/
+
+     /* 数组最大值*/
+	/*var arr=[1,8,9,12,81,57,79];
+	var max=0;
+	 for(var i=arr[0];i<arr.length;i++){
+	 	if(max<arr[i]){
+	 		max=arr[i];
+	 	}
+
+	 }
+	console.log(max);*/
+
+
+	/*数组由大到小排序*/
+	/*var arr=[78,45,3,21,5,9];
+	for(var i=0;i<arr.length;i++){
+		for(var j=i+1;j<arr.length;j++){
+			if(arr[i]<arr[j]){
+				var temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+	}
+      console.log(arr);*/
+
+
+      // 去空
+      /*var arr=[1,2,3,4,,5];
+      var newarr=[];     
+      for(var i=0;i<=arr.length;i++){
+      	  if(arr[i] != undefined){
+      	  	newarr[newarr.length]=arr[i];     	  	
+      	  }
+      }
+
+       console.log(newarr);*/
+
+
+     // 二维最大值
+     /*var a=[[74,2,3,4],[5,6,7,9]]
+     Ar(a);
+     function Ar(arrs){
+           
+     var max=arrs[0][0];
+     for(var i=0;i<arrs.length;i++){
+     	for(var j=0;j<arrs[i].length;j++){
+     		if(max < arrs[i][j]){     			 
+     			max = arrs[i][j];
+     		}
+     	}
+     }
+      console.log(max);
+    }*/
+
+
+    /*在数组后面添加任意元素*/
+      /*var arr=[4,5,6,7];
+      add(arr,4,5,6);
+      function add(arr){      
+        for(var i=1;i<=arguments.length;i++){
+        arr[arr.length]=arguments[i];
+        
+        }
+        console.log(arr);
+     }*/
+     /* 默认值练习*/
+    /*var arr=[78,45,3,21,5,9];
+    var fn= px(arr);
+     function.
+
+
+    function pxu p(arr,){
+	for(var i=0;i<arr.length;i++){
+		for(var j=i+1;j<arr.length;j++){
+			if(arr[i]<arr[j]){
+				var temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+	}
+      console.log(arr);
+  }
+  function pxdown(arr,){
+	for(var i=0;i<arr.length;i++){
+		for(var j=i+1;j<arr.length;j++){
+			if(arr[i]>arr[j]){
+				var temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+	}
+      console.log(arr);
+  }*/
+
+    /* 数组转化字符串
+    参数: arr 制定数组  str 连接符*/
+    /*var arr=[4,5,6,7];
+    var str=join(arr,'+');
+    console.log(str);
+
+
+    function join(arr,str){
+
+    	var result='';
+      for(var i=0;i<arr.length;i++){
+      	if(i<arr.length-1){
+        result += arr[i]+ str;
+    }else{
+    	result += arr[i];
+    }
+      }
+      return result;  
+    }*/
+
+    
+    /*filter arr[]  筛选数组中的哦数*/
+    /*var arr=[4,5,5,8,2];
+    var fn=filter(arr);
+    console.log(fn);
+    function filter(arr){
+      var newarr=[];
+      for(var i=0;i<arr.length;i++){
+      	if(arr[i]%2 == 0){
+      		newarr[newarr.length] = arr[i];
+      	}
+      }
+      return newarr;
+    }*/
+
+
+    /*简单计算*/
+   /* function aa(num1,num2){
+    	return num1*2+num2;
+    }
+    function bb(num1,num2){
+    	return num1*2-num2;
+    }
+    function cc(num1,num2){
+    	return num1*2*num2;
+    }
+    function dd(num1,num2){
+    	return num1*2/num2;
+    }
+
+    function math(num1,num2,fn){
+         return fn(num1,num2);
+
+    }
+    var jx=math(5,1,aa);
+    console.log(jx);*/
+
+    /* 映射*/
+    /*var arr=[4,5,6,7];                   
+    var result=map(arr,function(value){
+    	 result= value*2;
+    	 return result;
+    })
+       
+        console.log(result);
+
+      function map(arr,fn){                         
+      var newarr=[];         
+       for(i=0;i<arr.length;i++){
+         newarr[newarr.length]=fn(arr[i]);
+       }
+       return newarr;
+    
+    }*/
+
+
+    /*筛选*/
+   
+        /*var arr=[3,4,5,6,7];
+        var result=filter(arr,function(value){
+              	if(value%2==1){
+                  return value;
+              	}
+              });
+              
+       function filter(arr,fn){
+       	var newarr=[];
+       	for(i=0;i<arr.length;i++){
+       		if(fn(arr[i])){
+       		newarr[newarr.length]=arr[i];
+       		}
+        	   
+         	}
+         	return newarr;
+         }
+
+         console.log(result);*/
+
+         /*数组中任意一个元素首次出现的位置*/
+       /*  var arr=[1,5,2,3,7,1];
+          var z=index(arr,1);
+               console.log(z);
+
+         function index(arr,w){
+         	for(var i=0;i<arr.length;i++){
+         		if(arr[i] == w){
+                   return i;
+         		}
+         	}
+         	 return undefined;
+         }*/
+         /*最后一次*/
+         /*var arr=[1,5,2,3,7,1];
+          var z=index(arr,1);
+               console.log(z);
+
+         function index(arr,w){
+         	for(var i=arr.length-1;i>=0;i++){
+         		if(arr[i] == w){
+                   return i;
+         		}
+         	}
+         	 return undefined;
+         }*/
+
+
+         /*数组反转*/
+         /*var arr=[1,2,3,4];
+         console.log(reversal(arr));
+
+         function reversal(arr){
+         	var newarr=[];
+         	for(var i=arr.length-1;i>=0;i--){
+         		push(newarr,arr[i]);
+         	}
+         	  return newarr;
+         }*/
+                      /*把处理过的元素进行规整*/
+        /* function push(arr,...rest){
+         	for(var i=0;i<rest.length;i++){
+         		arr[arr.length]=rest[i];
+         	}
+         }*/
+
+
+
+
+      /*万能的添加和删除*/
+     
+
+         /*删除*/
+       /*var arr=[1,2,3,4,5];
+         console.log(spliceDelet(arr,1,1));
+     
+      function spliceDelet(arr,pos,num){
+      	var newarr=[];
+      	for(var i=0;i<arr.length;i++){
+      		if(i>=pos && i<pos+num){
+      			continue;
+      		}
+      		newarr[newarr.length]=arr[i];
+      	}
+      	return newarr;
+      }*/
+
+      /*添加*/
+       /*var arr=[1,2,3,4];
+       console.log(spliceAdd(arr,2,'z','y'));
+      function spliceAdd(arr,pos,...rest){
+      	var newarr=[];
+      	for(var i=0;i<pos;i++){
+          newarr[newarr.length]=arr[i];
+      	}
+      	for(var i=0;i<rest.length;i++){
+          newarr[newarr.length]=rest[i];
+      	}
+      	for(var i=pos;i<arr.length;i++){
+      		newarr[newarr.length]=arr[i];
+      	}
+      	return newarr;
+      }*/
+
+        // 万能添加、删除
+   /* function splice(arr,pos,num,...rest){
+    	var newarr=spliceDelet(arr,pos,num);
+    	if(rest.length>0){
+    	newarr=spliceAdd(newarr,pos,...rest)
+          
+          return newarr;
+    	}
+     
+    }*/
+
+
+
+    /*【回调函数】   有一个/全有才能弹出true  false*/
+   /* var arr=[1,2,3,4,5];
+      var wo=some(arr,function(value){
+        	
+            return value>0;
+        	
+        })
+        console.log(wo);
+
+    
+    function some(arr,fn){
+    	for(var i=0;i<arr.length;i++){
+    		if(fn(arr[i])){
+    			return true;
+    		}
+    	}
+    	return false;
+    }*/
+   /* var arr=[1,2,3,4,5];
+      var wo=every(arr,function(value){
+        	
+            return value>0;
+        	
+        })
+        console.log(wo);*/
+   /* function every(arr,fn){
+    	for(var i=0;i<arr.length;i++){
+    		if( !fn(arr[i]))
+    			return false;
+    	}
+    	return true;
+    }*/
+
+
+    /*递归函数*/
+  /*fn(0);
+ function fn(num){
+ 	if(num<5){
+ 		fn(++num);
+ 	}
+ 	alert(num);
+ }*/
+
+
+ /*数组的拷贝*/
+  /*var arr=[1,2,3,4,['x','y','z']];
+     
+   console.log(copy(arr))
+
+ function copy(arr){
+ 	var newarr=[];
+ 	for(var i=0;i<arr.length;i++){
+ 		if(typeof arr[i]== 'object'){
+ 			newarr[i] =copy (arr[i]);
+ 		}
+ 		else{
+ 			newarr[i]=arr[i];
+ 		}
+ 	}
+ 	return newarr;
+ }*/
+
+/*闭包函数*/
+// var num=4;
+// function fn(){
+// 	return fn1;
+// 	function fn1(){
+// 		num++
+// 		alert(num);
+// 	}
+// }
+// var re = fn();
+/*箭头函数*/
+   // var result=map(arr,function(value) {
+   // 	      return value-2;
+   // })
+
+   // var result=map(arr,(value)=>value-2);
+   // console.log(result);
+
+
+
+      /*对象的创建*/
+   function person(){
+    
+}
+  let zhangsan = new person();
+  let lishi =new person();
+  /*添加属性 比如下面的age*/
+  zhangsan.age = 10;
+  zhangsan.name ='zhangsan';
+  lishi.name = '李四';
+  lishi.age = 18;
+  lishi.sex = '人妖'; 
+  // 访问
+  // alert(zhangsan.name);
+ console.log(lishi);
+	</script>
+
+     
+</body>
+</html>
+
