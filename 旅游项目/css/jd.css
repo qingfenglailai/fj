@@ -1,0 +1,250 @@
+ @import url('base.css');
+ body{
+	font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.7;
+    color: gray;
+}
+.kong{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    background: pink;
+}
+/* banner+导航部分 */
+/* .page{
+	 position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+} */
+ .tou{
+	margin: 5em 0 0 0;
+	display: block;
+	/* background: red; */
+}
+.tok{
+	max-width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    /* background: red; */
+}
+.tk1{
+	 padding: 34px 30px;
+}
+.tozi_row{
+	margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+}
+.zi_left{
+	font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.zi_left>a{
+	padding: 5px 10px;
+    color: #000;
+}
+.zi_right{
+     padding: 0 5px;
+    margin: 5px 0 0 473px;
+
+}
+.zi_right li{
+	padding: 0;
+    margin: 0;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 0 4px;
+   
+}
+.zi_right li>a:hover{
+	color: #000 !important;
+    position: relative;
+
+    border-bottom: 1px solid #66D37E;
+}
+/*bannertu*/
+.main{
+	max-width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background: #fff;
+}
+.banner{
+	width: 1060px;
+	height: 500px;
+	 background: #fff;
+	position: relative;
+}
+.banpart{
+	width: 967px;
+	height: 100%;
+	 background: #fff;
+}
+.banpart>li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+.banpart>li>a>img{
+	width: 100%;
+	height: 100%;
+}
+.bword3{
+   position: absolute;
+   right: 33%;
+   top: 0 ;
+   display: table;
+	/* background: pink; */
+    opacity: 1;
+    min-height: 500px;
+    z-index: 9;
+}
+.bword3>h1{
+	margin-left: 30px;
+	 margin-top: 216px;
+    font-size: 30px;
+    line-height: 1.3;
+    /* font-weight: 300; */
+}
+.bword3>h2{
+	margin-left: 156px;
+	font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.bword3>p{
+	display: flex;
+	padding: 0 10px;
+	margin-left: 123px;
+}
+/*六个图*/
+.sixtu{
+	    padding: 3em 3em;
+}
+.wtu{
+	width: 1006px;
+	height: 600px;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.wtu>li{
+	width: 330px;
+	height: 300px;
+	background: #fff;
+	position: relative;
+	margin-top: 8px;
+	margin-right: 5px;
+
+}
+.wtu>li:hover .zhezhao{
+	opacity: 1;
+}
+.zhezhao{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	width: 330px;
+	height: 300px;
+	opacity: 0;
+	 transition:all 1s;
+}
+.zhezhao h3{
+	 font-size: 14px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0 ,-15px, 0);
+     color: #000;
+    font-weight: 400;
+    margin: 136px 0 15px 119px;
+
+}
+.zhezhao span{
+	display: block;
+    color: #999999;
+    font-size: 12px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0 ,-15px, 0);
+     margin: 0 0 15px 107px;
+
+}
+
+.wtu>li>img{
+	width: 100%;
+	height: 100%;
+}
+/*最后部分*/
+.foot{
+	max-width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background: #fff;
+    margin-top: 20px;
+        padding: 6em 3em;
+}
+.foottop{
+	    margin-left: -15px;
+    margin-right: -15px;
+    width: 1006px;
+    min-height:217px ;
+  background: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.foottop>li{
+	width: 251px;
+	min-height: 141px;
+	background: #fff;
+	margin-top: 20px;
+}
+.foottop>li>h4{
+	margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ .fh5co-footer-links li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+  display: block;
+}
+.fh5co-footer-links li a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.fh5co-footer-links li a:hover {
+  text-decoration: underline;
+}
+.ftbottom{
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.ftbottom>p{
+	margin-bottom: 20px;
+}
+.icons{
+	display: flex;
+	padding: 0 374px;
+}
+.icons>li{
+	width: 200px;
+	min-height: 25px;
+	margin: 0 auto;
+}
